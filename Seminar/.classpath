@@ -10,5 +10,7 @@
 	<classpathentry kind="src" path="seminar2"/>
 	<classpathentry kind="src" path="seminar4"/>
 	<classpathentry kind="src" path="seminar5"/>
+	<classpathentry kind="src" path="cont_bancar"/>
+	<classpathentry kind="src" path="joc_curse_auto"/>
 	<classpathentry kind="output" path="seminar1/out/production/seminar1"/>
 </classpath>
