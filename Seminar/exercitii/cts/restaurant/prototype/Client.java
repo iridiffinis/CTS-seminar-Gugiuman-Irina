@@ -4,7 +4,7 @@ public class Client implements IClient{
 	private String nume;
 	private int nrMasa;
 	private int nrLocuriRezervate;
-	public Client() {
+	private Client() {
 		this.nume = "n/a";
 		this.nrMasa = 0;
 		this.nrLocuriRezervate = 0;
