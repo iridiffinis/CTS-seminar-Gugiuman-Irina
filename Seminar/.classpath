@@ -17,5 +17,6 @@
 	<classpathentry kind="src" path="exercitii"/>
 	<classpathentry kind="src" path="seminar8"/>
 	<classpathentry kind="src" path="seminar9"/>
+	<classpathentry kind="src" path="agentie"/>
 	<classpathentry kind="output" path="seminar1/out/production/seminar1"/>
 </classpath>
