@@ -4,4 +4,6 @@ module Seminar {
 	exports cts.s02.principii_clean_code.clase;
 
 	requires java.xml;
+	requires junit;
+
 }
