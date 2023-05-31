@@ -43,14 +43,16 @@ public class Persoana implements IPersoana{
 		if(CNP.charAt(0)=='5'|| CNP.charAt(0)=='6')
 			an=(2000 + Integer.parseInt("" + CNP.charAt(1) + CNP.charAt(2)));		
 		
-		int luna= Integer.parseInt("" + CNP.charAt(3) + CNP.charAt(4));
+		int luna= Integer.parseInt("" + CNP.charAt(3) + CNP.charAt(4))-1;
 		int zi= Integer.parseInt("" + CNP.charAt(5) + CNP.charAt(6));
 		
 		Calendar dataNasterii=Calendar.getInstance();
 		dataNasterii.set(an,luna,zi);
 		Calendar dataCurenta=Calendar.getInstance();
 		if(dataNasterii.after(dataCurenta))
+		{
 			throw new MyException("Persoana nu s-a nascut inca");
+		}
 		long varsta_zile=TimeUnit.MILLISECONDS.toDays(Math.abs(dataCurenta.getTimeInMillis()-dataNasterii.getTimeInMillis()));
 		return (int) (varsta_zile/365);				
 	}

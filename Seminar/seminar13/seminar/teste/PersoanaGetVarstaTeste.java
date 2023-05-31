@@ -15,11 +15,11 @@ public class PersoanaGetVarstaTeste {
 		assertEquals(21, p.getVarsta());
 	}
 	
-//	@Test
-//	public void testGetVarstaBoundaryNouNascut() {
-//		Persoana p = new Persoana("Tiberiu","5230520340456");
-//		assertEquals(0, p.getVarsta());
-//	}
+	@Test
+	public void testGetVarstaBoundaryNouNascut() {
+		Persoana p = new Persoana("Tiberiu","5230520340456");
+		assertEquals(0, p.getVarsta());
+	}
 	
 	@Test
 	public void testGetVarstaBoundaryAnul2000() {
